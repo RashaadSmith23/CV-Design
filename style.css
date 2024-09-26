@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+li, a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  width: 50%;
+  margin: auto;
+  background-color: black;
+}
+
+main {
+  padding-left: 20px;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 400px 700px;
+  background-color: #fff;
+}
+
+.left-section {
+  padding-left: 2rem;
+  background: linear-gradient(-90deg, #0553b9, #082244) ;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.left-section .contact-section h3,
+.left-section .education-section h3,
+.left-section .skills-section h3,
+.left-section .language-section h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #fff;
+  width: 90%;
+}
+
+.left-section .contact-content,
+.left-section .education-content,
+.left-section .skills-content,
+.left-section .language-content {
+  padding-top: 20px;
+  width: 90%;
+  line-height: 20px;
+}
+
+.left-section .contact-content h4,
+.left-section .education-content h4,
+.left-section .skills-content h4,
+.left-section .language-content h4 {
+  font-weight: 500;
+  color: #6fb5f7;
+}
+
+.left-section .skills-content {
+  padding-left: 20px;
+  list-style: disc;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.left-section .contact-content .phone,
+.left-section .contact-content .email,
+.left-section .contact-content .address,
+.left-section .education-section .year {
+  margin-bottom: 10px;
+}
+
+.left-section .contact-content .phone:hover a,
+.left-section .contact-content .email:hover a {
+  color: rgb(211, 211, 211);
+}
+
+.left-section .language-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.right-section {
+  padding-top: 3rem;
+  padding-left: 20px;
+  background-color: #fff;
+}
+
+.right-section .top-section .name {
+  margin-bottom: 10px;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.right-section .top-section .specialty {
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.right-section .top-section .summary-section {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.right-section .top-section .summary {
+  font-size: 14.5px;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+.right-section .middle-section .experience-section h2,
+.right-section .bottom-section .reference-section h2,
+.right-section .bottom-section .contact-section h2 {
+  margin-top: -7px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #0553b9;
+  color: #6fb5f7;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.middle-section .experience-container {
+  padding: 25px;
+}
+
+.middle-section .experience-content .date {
+  text-align: end;
+  color: rgb(190, 190, 190);
+}
+
+.middle-section .experience-content .company {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.middle-section .experience-content .job-position {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #0553b9;
+}
+
+.middle-section .experience-content .job-summary {
+  line-height: 25px;
+  font-size: 1rem;
+}
+
+.middle-section .sidebar {
+  position: relative;
+}
+
+.middle-section .sidebar .sidebar-line-1::after {
+  content: '';
+  position: absolute;
+  background-color: #0553b9;
+  height: 300px;
+  width: 2px;
+  top: 20px;
+  left: -20px;
+}
+
+.middle-section .sidebar-line-1 .dot-1::after {
+  content: '';
+  position: absolute;
+  border: 1px solid #0553b9;
+  border-radius: 50%;  
+  height: 10px;
+  width: 10px;
+  top: 9px;
+  left: -25px;
+}
+
+.middle-section .sidebar .dot-3::before {
+  content: '';
+  position: absolute;
+  border: 1px solid #0553b9;
+  border-radius: 50%;
+  height: 14px;
+  width: 14px;
+  top: 320px;
+  left: -27px;
+}
+
+
+.middle-section .sidebar .sidebar-line-2::after {
+  content: '';
+  position: absolute;
+  background-color: #0553b9;
+  height: 250px;
+  width: 2px;
+  top: 335px;
+  left: -20px;
+}
+
+.middle-section .sidebar-line-2 .dot-2::after {
+  content: '';
+  position: absolute;
+  border: 1px solid #0553b9;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  top: 585px;
+  left: -25px;
+}
+
+.bottom-section .reference-content,
+.bottom-section .contact-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.bottom-section .reference-content .company-owner,
+.bottom-section .contact-content .my-name {
+  font-size: 1.9rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.bottom-section .reference-content .company-position {
+  color: rgb(138, 138, 138);
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.bottom-section .reference-content .contact-owner,
+.bottom-section .contact-content .contact-me {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bottom-section .contact-owner .phone h4,
+.bottom-section .contact-owner .email h4,
+.bottom-section .contact-me .phone h4,
+.bottom-section .contact-me .email h4 {
+  font-size: 1.1rem;
+  margin-bottom: 10px; 
+}
+
+.bottom-section .contact-owner .phone a,
+.bottom-section .contact-owner .email a,
+.bottom-section .contact-me .phone a,
+.bottom-section .contact-me .email a {
+  font-weight: 500;
+}
+
+.bottom-section .contact-owner .phone a:hover,
+.bottom-section .contact-owner .email a:hover,
+.bottom-section .contact-me .phone a:hover,
+.bottom-section .contact-me .email a:hover {
+  color: #0553b9;
+}
